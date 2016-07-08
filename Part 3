@@ -1,0 +1,8 @@
+Structural Analysis
+
+Describe the basic architecture of the standard.
+o Whatstyles/patternsdoesitseemtoutilize?Usetheterminologypresentedinthe course to describe the architecture.
+o Aretheresemanticsforusingtheframework,product,orstandard?Howarethey enforced and what are the consequences 
+  of violating them?
+o What variability mechanisms are built into the framework, product or standard – how does it meat different 
+  needs of the various stakeholders and/or the business contexts the framework, product or standard might be used in?
