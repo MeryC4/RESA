@@ -1,0 +1,11 @@
+Analysis of Systemic Properties and Tradeoffs
+
+Analyze the standard with respect to the following:
+○ Describe the architectural drivers that the framework, standard, 
+  or product is trying to address and how these are related to the context. 
+  Specifically discuss how the architectural approaches (structures, tactics, etc.) support the key goals and context.
+○ What architectural drivers are inhibited and why? What tradeoffs have been made?
+○ Are there any architectural drivers that the standard does not seem to explicitly 
+  support but seem to be relevant to the context? Should they be explicitly addressed or 
+  do they not matter – justify your answer? Can you analyze how well these other
+  architectural drivers are supported (or not supported) by the artifacts and design descriptions you were able to find?
