@@ -1,0 +1,153 @@
+\documentclass[xcolor=x11names,compress]{beamer}
+ 
+%% General document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{url}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\useoutertheme[subsection=false,infolines]{miniframes}
+\useinnertheme{default}
+\usefonttheme{serif}
+\usepackage{palatino}
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{caption}[numbered]
+
+\setbeamerfont{title like}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+
+\setbeamercolor*{lower separation line head}{bg=DeepSkyBlue4} 
+\setbeamercolor*{normal text}{fg=black,bg=white} 
+\setbeamercolor*{alerted text}{fg=red} 
+\setbeamercolor*{example text}{fg=black} 
+\setbeamercolor*{structure}{fg=black} 
+ 
+\setbeamercolor*{palette tertiary}{fg=black,bg=black!10} 
+\setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
+
+\renewcommand{\(}{\begin{columns}}
+\renewcommand{\)}{\end{columns}}
+\newcommand{\<}[1]{\begin{column}{#1}}
+\renewcommand{\>}{\end{column}}
+
+
+\beamertemplatenavigationsymbolsempty
+\setcounter{tocdepth}{1}
+
+\setbeamercolor{page number in head/foot}{fg=black}
+\definecolor{bordeaux}{rgb}{0.71,0.01,0.29}
+\definecolor{codebg}{rgb}{0.82,0.82,0.82}
+\definecolor{codehighlight}{HTML}{D4772A}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+
+\begin{frame}[plain]
+  \begin{figure}
+    \flushright
+      \includegraphics[scale=0.12]{hu_logo}
+    \vspace*{-0.4cm}
+  \end{figure}
+
+  \title{\textbf{Bosch's CAN bus\\Investigation of the standard}\\\vspace{0.2cm}}
+
+  \author{Meryem Can\\Stephan Fahrenkrog-Petersen\\Jakob Rüßler\\Thomas Schlegel\\
+  Daniel Titz\\Duc Anh Tran\\\vspace{0.3cm}}
+
+\selectlanguage{english}
+
+\date{\today}
+\titlepage
+\end{frame}
+
+
+\section{\scshape Introduction}
+\begin{frame}
+  \frametitle{Introduction and Basic Concepts}
+  \begin{itemize}
+      \item Bosch documentation~\cite{can}
+  \end{itemize}
+
+\end{frame}
+
+
+\section{\scshape Messages}
+\begin{frame}
+  \frametitle{Message Transfer and Validation}
+
+\end{frame}
+
+
+
+\section{\scshape Coding / Errors}
+\begin{frame}
+  \frametitle{Coding and Error Handling -- 1}
+
+  Overview:
+  \begin{itemize}
+    \item Bit stuffing $\rightarrow$ control mechanism
+    \item Distortions etc. $\rightarrow$ error handling to achieve error tolerance
+    \item 5 different error types (Bit, Stuff, CRC, Form, ACK)
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Coding and Error Handling -- 2}
+
+  \begin{itemize}
+    \item Message passing mechanism, no additional structure needed
+    \item Errors broadcasted when detected
+    \item Semantics important for correct transmission
+    \item Drivers: reliability, error limitation
+    \item Problem: new error types?
+  \end{itemize}
+
+\end{frame}
+
+
+\section{\scshape Fault Confinement}
+\begin{frame}
+  \frametitle{Fault Confinement}
+
+\end{frame}
+
+
+\section{\scshape Bit Timing}
+\begin{frame}
+  \frametitle{Bit Timing Requirements}
+
+\end{frame}
+
+
+\section{\scshape CAN Oscillator}
+\begin{frame}
+  \frametitle{CAN Oscillator Tolerance}
+\end{frame}
+
+\section{\scshape Conclusion}
+
+\begin{frame}
+  \frametitle{Conclusion}
+\end{frame}
+
+\begin{frame}
+  \frametitle{References}
+  \scriptsize
+  \bibliographystyle{unsrt}
+  \bibliography{references}
+\end{frame}
+
+\end{document}
