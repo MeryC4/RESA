@@ -121,7 +121,32 @@
 
 \section{\scshape Messages}
 \begin{frame}
-  \frametitle{Message Transfer and Validation}
+  \frametitle{Message Transfer and Validation -- 1}
+  Overview:
+  \begin{itemize}
+    \item Information is sent in fixed format messages of different but limited lengths
+    \item When free, any connected unit may send messages over the bus
+    \item The content of the message is named by an identifier
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Message Transfer and Validation -- 2}
+  
+    \centering
+    \includegraphics[scale=0.2]{framesetup}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Message Transfer and Validation -- 3}
+  
+  \begin{itemize}
+    \item A unit sending a message is the ``transmitter'' of that message
+    \item It stays transmitter, until the bus is idle or it loses arbitration
+    \item A unit is called ``receiver'' of a message, if it is not the transmitter and the bus is not idle
+  \end{itemize}
 
 \end{frame}
 
@@ -164,6 +189,17 @@
 \section{\scshape Bit Timing}
 \begin{frame}
   \frametitle{Bit Timing Requirements}
+
+
+\begin{itemize}
+    \item List of definitions and rules
+    \item Strength: short, but includes everything important
+    \item Weaknesses: almost text only, hard to read (structure),
+        like a glossary
+    \item Improvable by usage of more pictures and examples
+
+\end{itemize}
+
 
 \end{frame}
 
