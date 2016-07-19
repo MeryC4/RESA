@@ -81,9 +81,9 @@
 \begin{frame}
   \frametitle{Introduction and Basic Concepts}
   \begin{itemize}
-      \item Controller Area Network 
+      \item Controller Area Network~\cite{can}
       \item Serial communications protocol/bus system
-      \item Supports distributed realtime control with a very high level of security  ~\cite{can}
+      \item Supports distributed realtime control with a very high level of security 
    
   \end{itemize}
 
@@ -107,21 +107,21 @@
       \item standardized after ISO 11898
       \item ISO 11898-2 (Highspeed-CAN) - related
       \item ISISO 11898-3 (Lowspeed-CAN)- related      
-      \item Not compitable with each other
+      \item Not compatible with each other
   \end{itemize}
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{higher standards}
-  \begin{itemize}
-      \item 
-      \item 
-      \item     
-      \item 
-  \end{itemize}
-
-\end{frame}
+%\begin{frame}
+%  \frametitle{higher standards}
+%  \begin{itemize}
+%      \item 
+%      \item 
+%      \item     
+%      \item 
+%  \end{itemize}
+%
+%\end{frame}
 
 \section{\scshape Documentation}
 
@@ -219,7 +219,34 @@
 
 \section{\scshape CAN Oscillator}
 \begin{frame}
-  \frametitle{CAN Improvements}
+  \frametitle{CAN Improvements -- 1}
+
+\textbf{Aim:} Increase Oscillator Tolerance
+\vspace{0.3cm}
+
+\textbf{Modifications:}
+\begin{itemize}
+    \item Delay START OF FRAME (SOF) by fully sample INTERMISSION
+    \item Insert (not necessary) OVERLOAD FRAME
+    \item Synchronise on recessive to dominant edges
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{CAN Improvements -- 2}
+Still valid:
+\begin{itemize}
+    \item Hard Sync on SOF 
+    \item No SOF until three recessive Bits on INTERMISSION have been read
+\end{itemize}
+
+What was achieved?
+\begin{itemize}
+  \item Use of ceramic oscillators instead of quartz oscillators $\rightarrow$~PRICE!
+  \item But\ldots all nodes need to work with the enhanced protocol AND only if the most demanding node works with high tolerance
+\end{itemize}
+
 \end{frame}
 
 \section{\scshape Conclusion}
