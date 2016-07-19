@@ -139,13 +139,14 @@
 
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Message Transfer and Validation -- 3}
   
   \begin{itemize}
-    \item A unit sending a message is the ``transmitter'' of that message
-    \item It stays transmitter, until the bus is idle or it loses arbitration
-    \item A unit is called ``receiver'' of a message, if it is not the transmitter and the bus is not idle
+    \item Multi-master serial bus standard
+    \item All nodes in the network need to be synchronized
+    \item ``Dominant'' and ``recessive'' bits
   \end{itemize}
 
 \end{frame}
@@ -213,7 +214,7 @@
 
 \section{\scshape CAN Oscillator}
 \begin{frame}
-  \frametitle{CAN Improvements -- 1}
+  \frametitle{CAN Enhancement -- 1}
 
 \textbf{Aim:} Increase Oscillator Tolerance
 \vspace{0.3cm}
@@ -228,7 +229,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{CAN Improvements -- 2}
+  \frametitle{CAN Enhancement -- 2}
 Still valid:
 \begin{itemize}
     \item Hard Sync on SOF 
@@ -246,7 +247,47 @@ What was achieved?
 \section{\scshape Conclusion}
 
 \begin{frame}
-  \frametitle{Conclusion}
+  \frametitle{Conclusion -- Standard}
+
+\begin{itemize}
+ \item CAN: serial bus system with security features by Bosch
+ \item Developed for automotive industry
+ \item Standalone standard ISO 11898
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusion -- Documentation}
+
+\begin{itemize}
+ \item Describes CANs technical details
+ \item Strengths: compact, covers standard as a whole
+ \item Weaknesses: very general, very dry
+ \item Improvements: extend by examples, pictures, applications 
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusion -- Structure}
+
+\begin{itemize}
+ \item Message-passing pattern with multi-master
+ \item Strict message semantics to avoid errors
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusion -- Properties and Tradeoffs}
+\begin{itemize}
+ \item Drivers: real time, error handling and limitation, controlled messaging
+ \item Tradeoffs: new error types?, error scaling?
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}
